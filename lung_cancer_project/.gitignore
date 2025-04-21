@@ -1,0 +1,18 @@
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore dataset zip files (if you download them)
+lung_dataset.zip
+
+# Ignore the dataset folder (if you don't want to upload it)
+Augmented IQ-OTHNCCD lung cancer dataset/
+
+# Ignore model files (if it's not necessary for version control)
+lung_model.h5
+
+# Ignore database file (if it's not necessary for version control)
+lung_cancer.db
