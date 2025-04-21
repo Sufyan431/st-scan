@@ -22,3 +22,4 @@ This is an end-to-end deep learning project using CNN with Flask, HTML, and SQLi
 ├── train_model.py              ← Script for training CNN model
 ├── requirements.txt            ← Python dependencies
 └── README.md                   ← Project documentation -->
+
