@@ -7,21 +7,23 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
 project_name = 'lung_cancer_project'
 
-# List of folders (including dataset folder now)
+# Corrected: List of folders
 list_of_folders = [
     f"{project_name}/static/uploads",      # For uploaded images
     f"{project_name}/templates",           # HTML templates
-    f"{project_name}/model",               # Trained model
+    f"{project_name}/model",               # Save trained model
+    f"{project_name}/notebook",            # For Jupyter notebooks
     f"{project_name}/database",            # SQLite DB
-    f"{project_name}/dataset",             # 📁 Dataset folder added
+    f"{project_name}/dataset",             # Dataset folder
 ]
 
-# List of files (prepare_dataset.py included)
+# Corrected: List of files
 list_of_files = [
     f"{project_name}/templates/index.html",
     f"{project_name}/model/lung_model.h5",
+    f"{project_name}/notebook/train_test_model.ipynb",
     f"{project_name}/database/lung_cancer.db",
-    f"{project_name}/dataset/prepare_dataset.py",   # ✅ New script to download & unzip dataset
+    f"{project_name}/dataset/prepare_dataset.py",
     f"{project_name}/app.py",
     f"{project_name}/train_model.py",
     f"{project_name}/requirements.txt",
@@ -57,5 +59,3 @@ for filepath in list_of_files:
         logging.info(f"Created empty file: {filepath}")
     else:
         logging.info(f"File already exists: {filepath}")
-    
-    
